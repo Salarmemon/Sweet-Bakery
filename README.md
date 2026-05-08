@@ -1,18 +1,92 @@
-# React + Vite
+# Sweet Bakery 🍰
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and fully responsive bakery website built with **React**.  
+This project was created to showcase a clean UI, responsive layouts, smooth user experience, and modern frontend development practices.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- Fully responsive design for all screen sizes
+- Modern bakery-themed UI
+- Smooth navigation and interactive components
+- Optimized layout and performance
+- Reusable React components
+- Clean and organized code structure
+- Mobile-friendly interface
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 🛠️ Built With
 
-## Expanding the ESLint configuration
+- React
+- JavaScript (ES6+)
+- CSS3
+- HTML5
+- framer-motion
+- Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+## 🚀 Getting Started
+
+Clone the repository and run the project locally.
+
+```bash
+# Clone the repository
+git clone https://github.com/salarmemon/sweet-bakery.git
+
+# Navigate into the project folder
+cd sweet-bakery
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+---
+ 
+## 🎯 Purpose of This Project
+
+This project was built as a portfolio project to practice:
+
+- React component architecture
+- Responsive web design
+- Modern UI development
+- Frontend performance optimization
+- Clean code organization
+- Animations with framer motion
+
+---
+
+## 📱 Responsiveness
+
+The website is designed to work smoothly across:
+
+- Mobile devices
+- Tablets
+- Laptops
+- Desktop screens
+
+---
+
+## 🔮 Future Improvements
+
+- Add bakery product filtering
+- Add cart functionality
+- Integrate backend/database
+- Online ordering system
+
+---
+
+## 👨‍💻 Author
+
+Developed by **Salar Memon**
+
+---
+
+## ⭐ Show Your Support
+
+If you like this project, consider giving it a ⭐ on GitHub.
