@@ -26,10 +26,10 @@ const navVariables = [{
         name: "Contact"
     },
     {
-        href: "https://order.sindhsweets.com/",
+        href: "#order",
         name: "Order Online"
     }
-    ];
+    ];      
 
 
 
@@ -79,7 +79,7 @@ const [isOpen, setIsOpen] = useState(false);
             <HamburgerMenu menuItems={navVariables} isOpen={isOpen} toggleMenu={() => setIsOpen(!isOpen)} />
             <div className="logo-container">
 
-            <img src={logo} alt="Sindh Sweets Logo" className="logo h-10 md:h-16 lg:h-28 rounded-full" />
+            <img src={logo} alt="Sindh Sweets Logo" className="logo h-10 md:h-16 lg:h-28" />
 
             </div>
             
@@ -124,11 +124,11 @@ function Header() {
             <motion.div className="header-content mt-24 md:mt-36  lg:mt-52  p-4 md:p-12 flex  items-center justify-center md:items-start md:justify-start gap-12 sha" initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0}} transition={{duration: 1, delay: 0.3}}>
                 <div className="content flex flex-col items-start justify-start shadow-md shadow-slate-500 bg-slate-900 p-6">
                 <h1 className="text-[clamp(0.6rem,2vw,3rem)] font-heading text-gray-100 mb-4 ">
-                    <span className='text-[clamp(0.4rem,2vw,1.5rem)]'>🍩</span> Welcome to New Famous Bakers & Fast Food <span className='text-[clamp(0.4rem,2vw,1.5rem)]'>🍩</span></h1>
+                    <span className='text-[clamp(0.4rem,2vw,1.5rem)]'>🍩</span> Welcome to Sweet Bakers & Fast Food <span className='text-[clamp(0.4rem,2vw,1.5rem)]'>🍩</span></h1>
                 <h2 className="text-[clamp(0.7rem,4vw,3rem)] text-gray-100 mb-6 font-heading font-bold ">Find Your Perfect Healthy & Delicious Meal</h2>
 
 
-                <p className="text-gray-100 mb-12 w-full mr-24 text-[clamp(0.6rem,2vw,1.25rem)]">New Famous Bakers & Fast Food, located in the heart of Karachi, is a trusted name known for its exceptional taste and quality. With years of excellence, we serve delicious sweets, freshly baked delights, and flavorful fast food—crafted to satisfy every craving.</p>
+                <p className="text-gray-100 mb-12 w-full mr-24 text-[clamp(0.6rem,2vw,1.25rem)]">Sweet Bakery & Fast Food, located in the heart of Pakistan, is a trusted name known for its exceptional taste and quality. With years of excellence, we serve delicious sweets, freshly baked delights, and flavorful fast food—crafted to satisfy every craving.</p>
 
                 </div>
 

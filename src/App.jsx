@@ -4,7 +4,6 @@ import './App.css'
 import Header from './components/header';
 import About from './components/About';
 import Menu from './components/menu';
-import Gallary from './components/gallary';
 import Footer from './components/Footer';
 function App() {
   
@@ -14,7 +13,6 @@ function App() {
       <Header />
       <About />
       <Menu />
-      <Gallary />
       <Footer />
     </main>
   )

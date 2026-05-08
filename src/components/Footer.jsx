@@ -7,11 +7,12 @@ function Footer() {
     
 
     const categories1 = [
-        { name: "Special Sweets", href: "https://order.sindhsweets.com/?cat=409298%7C408985" },
+        { name: "Fast Food",
+            href: "#"
+         },
+        { name: "Special Sweets", href: "#" },
         { name: "Biscuits", href: "#" },
-        { name: "Fresh Cakes", href: "#" },
-        { name: "Nimco", href: "#" },
-        { name: "Rusk", href: "#" }
+        { name: "Fresh Cakes", href: "#" }
     ];
 
     const categories2 = [
@@ -54,17 +55,17 @@ function Footer() {
                 
                 <motion.div className="logo-section flex flex-col items-center gap-4 z-20 mt-8 md:mt-0 border-gray-700 p-4 rounded-full border-2 w-40 h-40 md:w-64 md:h-64 lg:w-80 lg:h-80 aspect-square hover:border-yellow-500" initial={{border: "none", opacity: 0}} whileInView={{border: "2px solid #fff", opacity: 1}} viewport={{once: true}} transition={{delay: 1, duration: 0.5}}>
                 
-                    <motion.img initial={{opacity:0, y: 30}} whileInView={{opacity: 1, y: 0}} viewport={{once: true}} transition={{delay: 1.1, duration: 0.5}} src={logo} alt="Logo" className="w-12 h-12 md:w-24 md:h-24 lg:w-32 lg:h-32 object-cover rounded-full" />
+                    <motion.img initial={{opacity:0, y: 30}} whileInView={{opacity: 1, y: 0}} viewport={{once: true}} transition={{delay: 1.1, duration: 0.5}} src={logo} alt="Logo" className="w-12 h-12 md:w-24 md:h-24 lg:w-32 lg:h-32 object-cover" />
 
                     <motion.p initial={{y: -30, opacity: 0}} whileInView={{y: 0, opacity: 1}} viewport={{once: true}} transition={{delay: 1.2, duration: 0.5}} className="logo-text text-center text-[clamp(0.6rem,2.2vw,2.5rem)] font-heading">
-                        Sindh Sweets
+                        Sweet Bakers
                     </motion.p>
 
                     <div className="social-icons flex gap-4 mt-4">
-                        <a href="https://www.facebook.com/Sindhsweets/?ref=page_internal" className="hover:text-gray-400 transition-all duration-300 w-8 h-8 flex items-center justify-center rounded-full border-2 border-gray-400 hover:border-yellow-500 hover:bg-yellow-700 hover:text-white">
+                        <a href="https://www.facebook.com" className=" transition-all duration-300 w-8 h-8 flex items-center justify-center rounded-full border-2 border-gray-400 hover:border-yellow-500 hover:bg-yellow-700 hover:text-white">
                             <FontAwesomeIcon icon={faFacebook} />
                         </a>
-                        <a href="https://www.instagram.com/sindhsweets/" className="hover:text-gray-400 transition-all duration-300 w-8 h-8 flex items-center justify-center rounded-full border-2 border-gray-400 hover:border-yellow-500 hover:bg-yellow-700 hover:text-white">
+                        <a href="https://www.instagram.com" className="hover:text-gray-400 transition-all duration-300 w-8 h-8 flex items-center justify-center rounded-full border-2 border-gray-400 hover:border-yellow-500 hover:bg-yellow-700">
                             <FontAwesomeIcon icon={faInstagram} />
                         </a>
                     </div>
@@ -72,12 +73,12 @@ function Footer() {
 
                 <div className="contact-section flex flex-col items-center gap-4 z-20 mt-8  border-gray-700 m-12" >
                     <h3 className="text-base md:text-lg lg:text-xl font-bold mb-6 font-heading">Contact Us</h3>
-                    <p id="phone" className='contact-text '><span className="mx-2 text-yellow-500">Phone:</span><a href="tel:(021) 35248683" className="hover:text-gray-400 transition-all duration-300  mb-6">(021) 35248683</a></p>
+                    <p id="phone" className='contact-text '><span className="mx-2 text-yellow-500">Phone:</span><a href="tel:+92229876" className="hover:text-gray-400 transition-all duration-300  mb-6">+92-2287658</a></p>
 
-                    <p className='mb-6 contact-text'><span className="text-yellow-500 mx-2">Email:</span>
-                        <a href="mailto:info@sindhsweets.com" className="hover:text-gray-400 transition-all duration-300 ">
-                            sindhsweets@hotmail.com
-                        </a>
+                    <p className='mb-6 email-text'><span className="text-yellow-500 mx-2">Email:</span>
+                    <a href="mailto:sweetbakers@email.com" className="hover:text-gray-400 transition-all duration-300">
+                        sweetbakers@email.com
+                    </a>
                     </p>
                 </div>
 
