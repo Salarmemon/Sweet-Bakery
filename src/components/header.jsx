@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import {useState, useEffect} from 'react';
 import logo from '../assets/logo.png';
@@ -8,31 +9,10 @@ import image4 from '../assets/image4.png';
 import image5 from '../assets/image5.png';
 import image6 from '../assets/image6.png';
 
-const navVariables = [{
-        href: "#home",
-        name: "Home"
-    },
-    {   href: "#about",
-        name: "About"
-    }, 
-    {   href: "#menu",
-        name: "Menu"
-    },
-    {        href: "#gallary",
-        name: "Gallary"
-    },
-    {
-        href: "#contact",
-        name: "Contact"
-    },
-    {
-        href: "#order",
-        name: "Order Online"
-    }
-    ];      
-
-
-
+const navVariables = [
+    { name: "Home", path: "/" },
+    { name: "Order Online", path: "/order" },
+];
 
 const images = [image1, image2, image3, image4, image5, image6];
 
@@ -52,13 +32,12 @@ function HamburgerMenu({menuItems, isOpen, toggleMenu}) {
             <motion.div initial={{opacity: 0, x: 50}} animate={{opacity: 1, x: 0}} exit={{opacity: 0, x: 50}} transition={{duration: 0.3}} className="hamburger-menu absolute top-16 right-4 bg-black/90 backdrop-blur-md rounded-lg p-4 flex flex-col items-start gap-4 z-50">
 
                 {menuItems.map((item, index) => (
-                    <a key={index} href={`${item.href}`} 
-                    target={item.href.startsWith('http') ? '_blank' : '_self'} className="nav-link text-gray-300 hover:text-gray-100 transition-all duration-300 hover:scale-110 text-lg font-medium" onClick={(e) => {
+                    <Link key={index} to={item.path} className="nav-link text-gray-300 hover:text-gray-100 transition-all duration-300 hover:scale-110 text-lg font-medium" onClick={(e) => {
 
                         toggleMenu();
                     }}>
                         {item.name}
-                    </a>
+                    </Link>
                 ))}
             </motion.div>
         )}
@@ -86,12 +65,12 @@ const [isOpen, setIsOpen] = useState(false);
             <div className="hidden md:flex gap-8 mr-8">
                 {navVariables.map((item, index) => (
 
-                    <a key={index} href={`${item.href}`} target={item.href.startsWith('http') ? '_blank' : '_self'}  className="nav-link text-gray-300 hover:text-gray-100 transition-all duration-300 hover:scale-110 text-lg font-medium" onClick={(e) => {
+                    <Link key={index} to={item.path} className="nav-link text-gray-300 hover:text-gray-100 transition-all duration-300 hover:scale-110 text-lg font-medium" onClick={(e) => {
             
 
                     }}>
                         {item.name}
-                    </a>        
+                    </Link>        
                 ))}
             </div>
             </motion.nav>

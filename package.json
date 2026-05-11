@@ -16,9 +16,9 @@
     "@fortawesome/react-fontawesome": "^3.3.1",
     "font-awesome": "^4.7.0",
     "framer-motion": "^12.38.0",
-    "gh-pages": "^6.3.0",
     "react": "^19.2.5",
-    "react-dom": "^19.2.5"
+    "react-dom": "^19.2.5",
+    "react-router-dom": "^7.15.0"
   },
   "devDependencies": {
     "@babel/core": "^7.29.0",
@@ -32,6 +32,7 @@
     "eslint": "^10.2.1",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
+    "gh-pages": "^6.3.0",
     "globals": "^17.5.0",
     "init": "^0.1.2",
     "npx": "^10.2.2",

@@ -1,19 +1,22 @@
 import { useState } from 'react'
-
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
 import Header from './components/header';
-import About from './components/About';
-import Menu from './components/menu';
+import Home from './components/Home';
 import Footer from './components/Footer';
+import OrderForm from './components/OrderForm';
 function App() {
   
   return (
     <main className="App font-text">
-
-      <Header />
-      <About />
-      <Menu />
-      <Footer />
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/order" element={<OrderForm />} />
+        </Routes>
+        <Footer />
+      </Router>
     </main>
   )
 }

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { image } from 'framer-motion/client';
 import image1 from '../assets/image1.png';
 import image2 from '../assets/image2.png';
@@ -9,31 +10,41 @@ import { motion } from 'framer-motion';
 const dishes = [
     { name: "Zinger Burger", 
       image: image1,
-      id : 1
+      id : 1,
+      price: 200
     },
     { name: "Cake",
       image: image2,
-      id : 2
+      id : 2,
+        price: 150
     },
     { name: "Cheese Fries",
       image: image3,
-      id : 3
+      id : 3,
+      price: 100
     },
     { name: "Tea",
       image: image4,
-      id : 4
+      id : 4,
+      price: 50
     }, 
     { name: "Tanduri Chicken",
       image: image5,
-      id : 5
+      id : 5,
+      price: 300
     },
     { name: "Fruit Chaat",
       image: image6,
-      id : 6
+      id : 6,
+      price: 120
     }
 ]
 
 function Menu() {
+
+    const saveDish = (dish) => {
+        localStorage.setItem('selectedDish', JSON.stringify(dish));
+    }
     return (
         <section id="menu" className="menu-section py-20 bg-gray-100">
             <div className="container mx-auto px-4">
@@ -47,9 +58,12 @@ function Menu() {
                             </motion.div>
                         <div className="text-center p-4">
                             <h3 className="text-xl font-bold mb-2 font-heading">{dish.name}</h3>
-                        <motion.button whileHover={{scale: 1.1}} className="order-button  bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-orange-500 to hover:to-yellow-400 text-white px-4 py-2 rounded-full duration-300 font-heading">
+                            <p className="text-lg font-bold text-gray-800">PKR {dish.price.toFixed(2)}</p>
+                        <Link to="/order">
+                            <motion.button whileHover={{scale: 1.1}} className="order-button  bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-orange-500 to hover:to-yellow-400 text-white px-4 py-2 rounded-full duration-300 font-heading" onClick={() => saveDish(dish)}>
                                 Order Now
                             </motion.button>
+                        </Link>
                             </div>
                         </div>
                     ))}

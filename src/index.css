@@ -60,3 +60,15 @@ body {
 .contact-text {
   font-size: clamp(0.5rem, 1.7vw, 1.6rem);
 }
+
+input, select {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(0.875rem, 2vw, 1.125rem);
+  background-color: #aaa;
+}
+input:invalid {
+  border-color: red;
+}
+input:valid {
+  border-color: green;
+}
